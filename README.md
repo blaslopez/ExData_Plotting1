@@ -1,4 +1,32 @@
-## Introduction
+## Files
+
+* `README.md`. This file which describes the files, installation, codebook and running issues
+* `getFile.R`. Used to download o get the local file name of the dataset
+* `loadData.R`. Used to load the selected rows of the dataset and arrange column
+* `makePlots.R`. Short script to call plot1 to plot4 script as a job
+* `plot1.R`, `plot2.R`, `plot3.R`, `plot4.R`. The script for the plots in the assignments
+* `plot1.png`, `plot2.png`, `plot3.png`, `plot4.png`. Generated png with the plots
+
+## Installation
+
+Copy the scripts (*.R) in a directory. *.png files are not required.
+
+## Running
+
+There are two differents ways.
+1. Call `makePlots.R` and all the plots will be create in your current directory
+2. Call `plot1.png`, `plot2.png`, `plot3.png`, `plot4.png` to create each plot file
+
+When you run any of these files:
+1. If checked if the dataset is loaded (ds) and, if true, no anothed load is made
+2. If not exists your are asked for download the original zip file or, if you have the file in your 
+computer, type "N" and provide the location of the file using the poped up file chooser.
+
+NOTE: run the script in a clean enviroment or use `rm(list=ls())' before run the first script
+
+
+
+## Assignment Introduction
 
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
@@ -54,6 +82,8 @@ dates.
 * You may find it useful to convert the Date and Time variables to
 Date/Time classes in R using the `strptime()` and `as.Date()`
 functions.
+
+* A new variable <b>DateTime</b> is added with the compund date and time values
 
 * Note that in this dataset missing values are coded as `?`.
 
